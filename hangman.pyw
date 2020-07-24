@@ -8,6 +8,7 @@ class Hangman():
         self.window = tkinter.Tk()
         self.window.title("Hangman")
         self.window.geometry("650x600")
+        self.window.resizable(0,0)
         self.window.config(bg="Black")
 
         with open("words.json", "rb") as w:
