@@ -41,7 +41,7 @@ class Hangman():
             self.stateLabel.place(x=0, y=370)
 
         if self.hangman_state[0] == 6:
-            tkinter.messagebox.showerror("Game Over", "You Lost!")
+            tkinter.messagebox.showerror("Game Over", f"You Lost!\nThe Word Was: {self.word}")
             self.MainMenu()
 
         won = True
